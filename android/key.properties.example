@@ -1,0 +1,6 @@
+# Copy to android/key.properties and fill in your own keystore.
+# Never commit the real file.
+storePassword=your-store-password
+keyPassword=your-key-password
+keyAlias=timbre
+storeFile=../timbre-release.jks

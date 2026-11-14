@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  audio_service picks its notification action icons by name at runtime, so the
+  release resource shrinker cannot see the references and would remove them.
+  Without them the media notification throws while it is built, and playback
+  state never reaches the lock screen or the media card.
+-->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/audio_service_*" />
